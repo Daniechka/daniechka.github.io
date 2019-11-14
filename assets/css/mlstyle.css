@@ -1,0 +1,77 @@
+﻿body {
+    background-image: url("../img/forest.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    font-size: 19px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.txtblock {
+    background-color: darkslategray;
+    opacity: 0.97;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.btitle {
+    display: inline;
+    box-sizing: content-box;
+}
+
+h3{
+    text-shadow: 2px 1px 2px black;
+}
+
+.intext-link {
+    font-style: italic;
+    color: white;
+    shape-outside: border-box;
+    text-underline-position: unset;
+}
+
+.intext-link:hover{
+    color: yellow;
+}
+
+.container {
+    width: auto;
+    margin: 10px auto;
+}
+
+.b1 {
+    float: left;
+    width: 450px;
+    min-height: 150px;
+    margin-right: 5px;
+}
+
+img {
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.b2 {
+    float: left;
+    width: 282px;
+    min-height: 150px;
+    margin-right: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.b3 {
+    float: left;
+    width: 290px;
+    min-height: 150px;
+}
+
+.b4 {
+    clear: both;
+    max-width: 1064px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Viewport -  видимая пользователю область страницы, не прибегая к прокрутке. Установка адаптивной разметки-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Установка эмблемы в закладке браузера-->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <!--Подключение стилей на навигационной панели-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/menustyle.css">
+    <title>Главная</title>
+</head>
+
+<body>
+<div class="navbar"> 
+  <!--Menu points-->
+  <a href="">Главная</a>
+  <a href="pages/motivation.html">Мотивация</a>
+  <!--Контейнер под выпадающее меню, в ктр помещается кнопка-->
+  <div class="dropdown">
+
+      <button class="dropbtn" onclick="myFunction()"> Принципиальные части <i class="fa fa-caret-down"></i>
+      </button>
+
+      <div class="dropdown-content" id="myDropdown">
+        <!--Ссылки в пунктах выпадающего меню, # - якорь (hashbang) на участок страницы -->
+        <a href="pages/karta.html">Карта</a>
+        <a href="pages/ml.html">Машинное обучение & Лес</a>
+      </div>
+  </div> 
+</div>
+
+<br />
+<h3 class="txtblock btitle"> Магистерская </h3>
+<p class="txtblock">Чтобы узнать больше, нажмите на раздел меню "Принципиальные части". Вы сможете перейти к интересующей теме.</p>
+
+<script src="assets\js\menuaction.js"></script>
+</body>
+</html>
+
+
+

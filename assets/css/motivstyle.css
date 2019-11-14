@@ -1,0 +1,118 @@
+﻿body {
+    background-image: url("../img/forest.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    font-size: 19px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    text-shadow: 2px 1px 2px black;
+}
+
+.txtblock {
+    background-color: darkslategray;
+    opacity: 0.97;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+.intro {
+    display: inline-block;
+}
+
+.q_answer {
+    font-size: 19px;
+    border-radius: 5px;
+    padding-right: 10px;
+    width: 95%;
+    box-sizing: content-box;
+}
+
+.butn {
+    border-radius: 6px;
+    background-color: darkolivegreen;
+    border: 1px solid lightgray;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 19px;
+    padding: 10px;
+    width: 180px;
+    transition: all 0.25s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+span.butn  {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.25s;    
+} 
+
+span .butn:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.25s;
+}
+
+span:hover .butn {
+    padding-right: 25px;
+}
+
+span:hover .butn:after {
+    opacity: 1;
+    right: 0;
+}
+
+.checkbox input {
+    position: absolute;
+    z-index: -1;
+    opacity: 50;
+    margin: 2px 0 0 10px;
+}
+
+.checkbox__text {
+    position: relative;
+    padding: 0 0 0 50px;
+    cursor: pointer;
+}
+
+.checkbox__text:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 39px;
+    height: 23px;
+    border-radius: 12px;
+    background: #CDD1DA;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+    transition: .2s;
+ }
+
+.checkbox__text:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 19px;
+    height: 19px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0,0,0,.3);
+    transition: .2s;
+}
+
+.checkbox input:checked + .checkbox__text:before {
+    background: green;
+}
+
+.checkbox input:checked + .checkbox__text:after {
+    left: 18px;
+}
