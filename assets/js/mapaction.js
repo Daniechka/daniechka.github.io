@@ -25,8 +25,8 @@ var geojsonFeature = {
 function onEachFeature(feature, layer) {
     if (feature.properties && feature.properties.popupContent) {
         layer.bindPopup(feature.properties.popupContent);
-    } else if (feature.properties && feature.properties.Name) {
-        layer.bindPopup(feature.properties.Name);
+    } else if (feature.properties && feature.properties.OMSCHRIJVI) {
+        layer.bindPopup(feature.properties.OMSCHRIJVI);
     };
 }; 
 
